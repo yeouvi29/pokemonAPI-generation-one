@@ -13,22 +13,6 @@
   box-sizing: border-box;
 }
 
-.buttons {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  color: #fff;
-}
-
-.button-left {
-  left: 0;
-  grid-area: btn-left;
-}
-
-.button-right {
-  right: 0;
-  grid-area: btn-right;
-}
-
 @media (min-width: 600px) {
   .main {
     grid-template-columns: 10% 80% 10%;
@@ -37,7 +21,4 @@
     margin-top: 100px;
   }
 
-  .buttons {
-    position: relative;
-  }
 }

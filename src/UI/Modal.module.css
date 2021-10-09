@@ -28,6 +28,7 @@
   top: -10px;
   right: -10px;
   border: none;
+  outline: none;
 }
 
 .close--btn {

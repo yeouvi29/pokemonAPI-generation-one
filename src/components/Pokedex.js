@@ -17,7 +17,6 @@ const Pokedex = (props) => {
 
   const clickHandler = () => {
     setIsClicked(true);
-    console.log("it's clicked");
   };
 
   useEffect(() => {

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
-import Button from "../UI/Button";
-import Pokedex from "./Pokedex";
-import classes from "./Main.module.css";
 import randomColor from "randomcolor";
+
+import Pokedex from "./Pokedex";
+
+import classes from "./Main.module.css";
 
 const Main = () => {
   // state that manages fetched page data from pokeapi
