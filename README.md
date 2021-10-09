@@ -1,6 +1,6 @@
 # PokeAPI app - Generation 1
 
-This project is about building a page that fetching data from [https://www.pokeapi.co](https://www.pokeapi.co) and displaying data.
+This project is about building a page that fetching Pokemon generation 1 data from [https://www.pokeapi.co](https://www.pokeapi.co) and displaying data.
 Each pokemon is clicked, show the detail information.
 
 ## Available Scripts
@@ -19,4 +19,4 @@ Builds the app for production to the `build` folder.\
 ### Depolyed site
 
 If you want to check the site without building app by yourself, visit this website.
-[https://pokemonapi-by-emily.herokuapp.com/](https://pokemonapi-by-emily.herokuapp.com/)
+[https://pokemonapi-gen1-by-emily.herokuapp.com/](https://pokemonapi-gen1-by-emily.herokuapp.com/)
