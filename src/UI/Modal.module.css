@@ -27,8 +27,8 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  border: none;
-  outline: none;
+  border: 2px solid #000;
+  border-radius: 100%;
 }
 
 .close--btn {
@@ -38,7 +38,6 @@
   border-radius: 100%;
   background-color: #000;
   border: 2px solid #fff;
-  outline: 2px solid #000;
   position: relative;
 }
 
