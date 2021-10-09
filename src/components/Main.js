@@ -6,15 +6,14 @@ import Pokedex from "./Pokedex";
 import classes from "./Main.module.css";
 
 const Main = () => {
-  // state that manages fetched page data from pokeapi
-  const [pageData, setPageData] = useState({
+  // state that manages fetched the pokemon generation one data from pokeapi
+  const [generationOne, setGenerationOne] = useState({
     isFetching: true,
-    currentUrl: "https://pokeapi.co/api/v2/generation/1/",
     pokedexData: [],
     color: [],
   });
 
-  // when the state of pageData.isFetching or pageData.currentUrl is changed, fetching the new data with the url that is stored in pageData.currentUrl
+  // when the state of generationOne.isFetching, fetching the pokemon getneration one's data
   useEffect(() => {
     const getPokemons = async (url) => {
       try {
@@ -24,17 +23,15 @@ const Main = () => {
             const colorArr = new Array(data["pokemon_species"].length)
               .fill("")
               .map(() => randomColor());
-            setPageData({
+            setGenerationOne({
               isFetching: false,
-              currentUrl: "https://pokeapi.co/api/v2/generation/1/",
               pokedexData: data["pokemon_species"],
               color: colorArr,
             });
           });
       } catch (err) {
-        setPageData((prevState) => ({
+        setGenerationOne((prevState) => ({
           isFetching: false,
-          currentUrl: "https://pokeapi.co/api/v2/generation/1/",
           pokedexData: prevState.pokedexData,
           color: prevState.color,
         }));
@@ -42,12 +39,16 @@ const Main = () => {
       }
     };
 
-    if (pageData.isFetching) getPokemons(pageData.currentUrl);
-  }, [pageData.isFetching, pageData.currentUrl]);
+    if (generationOne.isFetching)
+      getPokemons("https://pokeapi.co/api/v2/generation/1/");
+  }, [generationOne.isFetching]);
 
   return (
     <div className={classes.main}>
-      <Pokedex pokedexData={pageData.pokedexData} color={pageData.color} />
+      <Pokedex
+        pokedexData={generationOne.pokedexData}
+        color={generationOne.color}
+      />
     </div>
   );
 };
