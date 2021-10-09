@@ -4,7 +4,8 @@
   display: flex;
   top: 0;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
   padding: 0 20px;
   position: fixed;
   box-sizing: border-box;
@@ -33,7 +34,7 @@
 }
 
 .logo span {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .pikachu {
@@ -57,6 +58,11 @@ nav ul li {
   .logo {
     font-size: 3rem;
   }
+
+  .logo span {
+    font-size: 1.7rem;
+  }
+
 
   .pikachu {
     height: 70%;
