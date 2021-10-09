@@ -1,0 +1,12 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 200;
+  color: #fff;
+  background-color: grey;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+}
